@@ -1,0 +1,85 @@
+/* Global Style */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #8e9eab, #eef2f3);
+  color: #333;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 10px;
+}
+
+.container {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 30px;
+  color: #2c3e50;
+}
+
+/* Card Styling */
+.card {
+  background: #fff;
+  padding: 25px;
+  margin-bottom: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+}
+
+h2 {
+  color: #34495e;
+  margin-bottom: 15px;
+}
+
+/* Buttons */
+.buttons, .card button {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  background-color: blue;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #1f5c87;
+}
+
+/* Results */
+.result {
+  margin-top: 15px;
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  h1 {
+    font-size: 22px;
+  }
+
+  button {
+    width: 100%;
+  }
+}

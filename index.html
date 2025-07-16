@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Advanced Styling & JavaScript Task</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🌐 Responsive Web Task</h1>
+
+    <!-- QUIZ SECTION -->
+    <div class="card quiz-card">
+      <h2>🧠 Quiz Time</h2>
+      <p>What is the capital of France?</p>
+      <div class="buttons">
+        <button onclick="checkAnswer('a')">a) Berlin</button>
+        <button onclick="checkAnswer('b')">b) Madrid</button>
+        <button onclick="checkAnswer('c')">c) Paris</button>
+      </div>
+      <p id="quiz-result" class="result"></p>
+    </div>
+
+    <!-- API SECTION -->
+    <div class="card joke-card">
+      <h2>😂 Joke Generator</h2>
+      <p>Need a quick laugh?</p>
+      <button onclick="fetchJoke()">Get a Joke</button>
+      <p id="joke" class="result"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
